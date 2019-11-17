@@ -1,5 +1,10 @@
-/*
-Theme Name: College Theme
+
+/* Theme Name: College Theme
 Author: Matthew McDevitt
-Version: 1.0
-*/
+Version: 1.0 */
+
+
+body {
+    color: blueviolet;
+}
+
