@@ -6,5 +6,12 @@ function college_files(){
     wp_enqueue_style('icons', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
     wp_enqueue_style('college_main_styles', get_stylesheet_uri());
 }
+function college_features(){
+    register_nav_menu('headerMenuLocation','Header Menu Location');
+    register_nav_menu('footerMenuLocationOne','Footer Location One');
+    register_nav_menu('footerMenuLocationTwo','Footer Location Two');
+    add_theme_support( 'title-tag');
+}
 
 add_action('wp_enqueue_scripts', 'college_files');
+add_action('after_setup_theme', 'college_features');
