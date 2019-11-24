@@ -7,6 +7,9 @@ function college_files(){
     wp_enqueue_style('college_main_styles', get_stylesheet_uri());
 }
 function college_features(){
+    register_nav_menu('headerMenuLocation','Header Menu Location');
+    register_nav_menu('footerMenuLocationOne','Footer Location One');
+    register_nav_menu('footerMenuLocationTwo','Footer Location Two');
     add_theme_support( 'title-tag');
 }
 
